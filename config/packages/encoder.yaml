@@ -1,0 +1,4 @@
+framework:
+    encoder:
+        encodable_paths:
+            - src/{Dto}
