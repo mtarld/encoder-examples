@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Serializer;
 
-use Symfony\Component\Encoder\EncoderInterface as NewEncoderInterface;
+use Symfony\Component\JsonEncoder\EncoderInterface as NewEncoderInterface;
 use Symfony\Component\Serializer\Encoder\EncoderInterface;
 
 final class JsonEncoderBridgeEncoder implements EncoderInterface

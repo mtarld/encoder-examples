@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Stream;
 
-use Symfony\Component\Encoder\Stream\StreamWriterInterface;
+use Symfony\Component\JsonEncoder\Stream\StreamWriterInterface;
 
 final class OutputStream implements StreamWriterInterface
 {

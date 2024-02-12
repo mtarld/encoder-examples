@@ -13,12 +13,12 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 /**
  * This example shows how the new encoder could be integrated in the current Serializer
- * in that way, only one encoder will be responsible of JSON encoding/decoding.
+ * in that way, only one encoder will be responsible for JSON encoding/decoding.
  *
- * Please note that there will be no performance improvment by doing that
+ * Please note that there will be no performance improvement by doing that
  * because the exact data structure isn't know.
  *
- * But, it allows developper to call directly the encoder is performance/streaming
+ * But, it allows developer to call directly the encoder is performance/streaming
  * is needed (see other examples)
  */
 #[AsCommand(name: 'example:json-encoder-bridge')]
