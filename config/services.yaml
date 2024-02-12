@@ -24,3 +24,26 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    Symfony\Component\JsonEncoder\EncoderInterface: '@Symfony\Component\JsonEncoder\JsonEncoder'
+    Symfony\Component\JsonEncoder\JsonEncoder:
+        arguments:
+            $cacheDir: '%kernel.cache_dir%'
+
+    Symfony\Component\JsonEncoder\DecoderInterface: '@Symfony\Component\JsonEncoder\JsonDecoder'
+    Symfony\Component\JsonEncoder\JsonDecoder:
+        arguments:
+            $cacheDir: '%kernel.cache_dir%'
+
+
+    Symfony\Component\JsonEncoder\Mapping\PropertyMetadataLoaderInterface: '@app.metadata_loader.generic'
+    app.metadata_loader.base:
+        class: Symfony\Component\JsonEncoder\Mapping\PropertyMetadataLoader
+
+    app.metadata_loader.generic:
+        class: Symfony\Component\JsonEncoder\Mapping\GenericTypePropertyMetadataLoader
+        arguments:
+            $decorated: '@app.metadata_loader.base'
+
+
+    Symfony\Component\TypeInfo\TypeContext\TypeContextFactory: ~

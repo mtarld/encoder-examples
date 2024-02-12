@@ -7,7 +7,7 @@ use App\Entity\Product;
 use App\Stream\OutputStream;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
-use Symfony\Component\Encoder\EncoderInterface;
+use Symfony\Component\JsonEncoder\EncoderInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

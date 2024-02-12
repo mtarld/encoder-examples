@@ -6,7 +6,7 @@ namespace App\Command;
 
 use App\Dto\ProductEncodableDto;
 use App\Entity\Product;
-use Symfony\Component\Encoder\DecoderInterface;
+use Symfony\Component\JsonEncoder\DecoderInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Serializer;
 
-use Symfony\Component\Encoder\DecoderInterface as NewDecoderInterface;
+use Symfony\Component\JsonEncoder\DecoderInterface as NewDecoderInterface;
 use Symfony\Component\Serializer\Encoder\DecoderInterface;
 use Symfony\Component\TypeInfo\Type;
 

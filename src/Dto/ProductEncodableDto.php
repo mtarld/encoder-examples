@@ -6,9 +6,9 @@ namespace App\Dto;
 
 use App\Entity\Product;
 use App\Service\PriceFormatter;
-use Symfony\Component\Encoder\Attribute\EncodedName;
-use Symfony\Component\Encoder\Attribute\EncodeFormatter;
-use Symfony\Component\Encoder\Attribute\DecodeFormatter;
+use Symfony\Component\JsonEncoder\Attribute\EncodedName;
+use Symfony\Component\JsonEncoder\Attribute\EncodeFormatter;
+use Symfony\Component\JsonEncoder\Attribute\DecodeFormatter;
 
 class ProductEncodableDto
 {
